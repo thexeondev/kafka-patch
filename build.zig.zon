@@ -1,7 +1,7 @@
 .{
-    .name = .yuzuha_patch,
+    .name = .kafka_patch,
     .version = "0.0.1",
     .minimum_zig_version = "0.17.0",
     .paths = .{""},
-    .fingerprint = 0xe102372693031337,
+    .fingerprint = 0x70bf1745e51f1337,
 }

@@ -2,11 +2,11 @@
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
     <assemblyIdentity
         type="win32"
-        name="ReversedRooms.Yuzuha.Bootstrap"
+        name="ReversedRooms.Kafka.Bootstrap"
         version="1.0.0.0"
         processorArchitecture="amd64"
     />
-    <description>Yuzuha launcher</description>
+    <description>Kafka Bootstrap</description>
     <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
         <application>
             <!-- Windows 10 and Windows 11 -->

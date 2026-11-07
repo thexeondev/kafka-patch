@@ -16,7 +16,7 @@ pub const std_options: std.Options = .{
     .log_level = .debug,
 };
 
-const log = std.log.scoped(.yuzuha);
+const log = std.log.scoped(.kafka);
 
 var game_assembly: GameAssembly = undefined; // populated by `hookLoadMhyBase`
 
