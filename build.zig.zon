@@ -1,7 +1,7 @@
 .{
-    .name = .kafka_patch,
+    .name = .thaumiel,
     .version = "0.0.1",
     .minimum_zig_version = "0.17.0",
     .paths = .{""},
-    .fingerprint = 0x70bf1745e51f1337,
+    .fingerprint = 0xd53f9c21a5be1337,
 }

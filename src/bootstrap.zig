@@ -4,7 +4,7 @@ const common = @import("common.zig");
 const fatal = common.fatal;
 
 const exe_name = "ZenlessZoneZeroBeta.exe";
-const dll_name: [:0]const u8 = "kafka.dll";
+const dll_name: [:0]const u8 = "thaumiel.dll";
 
 pub fn main() void {
     const w = std.os.windows;
@@ -26,7 +26,7 @@ pub fn main() void {
     ) == .FALSE)
         fatal(
             \\Failed to create game process.
-            \\Make sure you've placed kafka-bootstrap.exe in the game directory, near 
+            \\Make sure you've placed remielle.exe in the game directory, near 
         ++ exe_name, .{});
     defer _ = w.ntdll.NtClose(process_info.hProcess);
 

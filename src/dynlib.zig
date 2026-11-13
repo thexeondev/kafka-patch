@@ -16,7 +16,7 @@ pub const std_options: std.Options = .{
     .log_level = .debug,
 };
 
-const log = std.log.scoped(.kafka);
+const log = std.log.scoped(.thaumiel);
 
 var game_assembly: GameAssembly = undefined; // populated by `hookLoadMhyBase`
 

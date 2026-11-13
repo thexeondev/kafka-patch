@@ -29,7 +29,7 @@ pub fn fatal(comptime fmt: [:0]const u8, args: anytype) noreturn {
                 0, // ProcedureNumber
                 @ptrCast(&messageBoxA), // ProcedureAddress
             ) == .SUCCESS)
-                _ = messageBoxA(null, errmsg, "Kafka", 0x30);
+                _ = messageBoxA(null, errmsg, "Thaumiel", 0x30);
         }
     } else |_| {}
 
