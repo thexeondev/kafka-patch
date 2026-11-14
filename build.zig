@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const launcher = b.addExecutable(.{
-        .name = "remielle",
+        .name = "remielle-bootstrap",
         .win32_manifest = b.addWriteFiles().add(
             "launcher.manifest",
             @embedFile("win32_manifest.xml"),
