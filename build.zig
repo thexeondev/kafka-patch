@@ -1,4 +1,23 @@
+const builtin = @import("builtin");
 const std = @import("std");
+
+const zig_version: std.SemanticVersion = .{
+    .major = 0,
+    .minor = 17,
+    .patch = 0,
+};
+
+comptime {
+    const zig_version_equal =
+        zig_version.major == builtin.zig_version.major and
+        zig_version.minor == builtin.zig_version.minor and
+        zig_version.patch == builtin.zig_version.patch;
+
+    if (!zig_version_equal) @compileError(std.fmt.comptimePrint(
+        "unsupported zig version: expected {f}, found {f}",
+        .{ zig_version, builtin.zig_version },
+    ));
+}
 
 pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{ .default_target = .{ .os_tag = .windows } });
