@@ -12,7 +12,7 @@ pub fn fatal(comptime fmt: [:0]const u8, args: anytype) noreturn {
 
     var errmsg_buf: [1024]u8 = undefined;
 
-    if (std.fmt.bufPrintSentinel(&errmsg_buf, fmt, args, 0)) |errmsg| {
+    if (std.mem.printSentinel(&errmsg_buf, fmt, args, 0)) |errmsg| {
         var user32: w.HANDLE = undefined;
 
         if (w.ntdll.LdrLoadDll(
